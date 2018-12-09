@@ -4,7 +4,7 @@ var htmlbeautify = require('gulp-html-beautify');
 // Optimize image files
 var imagemin = require('gulp-imagemin');
 // Caching images that were already optimized
-var cache = require('gulp-cache')
+var cache = require('gulp-cache');
 // Process scss files
 var sass = require('gulp-sass');
 // Enable Autoprefixer
@@ -45,7 +45,7 @@ gulp.task('sass', function () {
 
 gulp.task('init', ['copyHTML', 'copyHTML', 'copyImage', 'copyJavascript'], function (){
   console.log('initializing project');
-})
+});
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
