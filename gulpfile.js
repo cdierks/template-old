@@ -56,7 +56,7 @@ gulp.task('serve', ['sass'], function() {
 
     gulp.watch('./source/html/*.html', ['copyHTML']);
     gulp.watch('./source/img/*', ['copyImage']);
-    gulp.watch('./source/js/*js', ['copyJavascript']);
+    gulp.watch('./source/js/*.js', ['copyJavascript']);
     gulp.watch('./source/scss/**/*.scss', ['sass']);
     gulp.watch('./build/*.html').on('change', browserSync.reload);
 });
