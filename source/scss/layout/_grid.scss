@@ -1,0 +1,25 @@
+.css-grid {
+    display: grid;
+    margin: 0 auto;
+    gap: 24px;
+
+    @include breakpoint('s') {
+        max-width: 95%;
+        grid-template-columns: 1fr;
+    }
+
+    @include breakpoint('m') {
+        max-width: 80%;
+        grid-template-columns: repeat(6, 1fr [col-start]);
+    }
+
+    @include breakpoint('l') {
+        max-width: 960px;
+        grid-template-columns: repeat(12, 1fr [col-start]);
+    }
+
+    @include breakpoint('xl') {
+        max-width: 1200px;
+        grid-template-columns: repeat(12, 1fr [col-start]);
+    }
+}
