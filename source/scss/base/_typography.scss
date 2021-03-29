@@ -1,15 +1,203 @@
 * {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
+// Typography follows the rules of a vertical rhythm taken from gridlover.net
+// Scale Factor: 1.618 (golden section)
+
 html {
-    font-size: 16px;
+  font-size: $font-size-s;
+  line-height: $line-height-s;
 
-    @include breakpoint('l') {
-        font-size: 17px;
-    }
-
-    @include breakpoint('xl') {
-        font-size: 18px;;
-    }
+  @include breakpoint("l") {
+    font-size: $font-size-l;
+    line-height: $line-height-l;
   }
+
+  @include breakpoint("xl") {
+    font-size: $font-size-xl;
+    line-height: $line-height-xl;
+  }
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin: auto;
+  @include breakpoint("l") {
+    line-height: 1.5882653rem;
+  }
+
+  @include breakpoint("xl") {
+    line-height: 1.6111111rem;
+  }
+}
+
+p,
+q,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  hyphens: auto;
+  text-align: justify;
+  margin-top: 0rem;
+  margin-bottom: 1.625rem;
+
+  @include breakpoint("l") {
+    line-height: 1.5882653rem;
+  }
+
+  @include breakpoint("xl") {
+    line-height: 1.6111111rem;
+  }
+}
+
+// HEADINGS
+
+h1 {
+  font-size: 4.25rem;
+  line-height: 4.875rem;
+  margin-top: 1.625rem;
+  margin-bottom: 3.25rem;
+
+  @include breakpoint("l") {
+    font-size: 4.2352941rem;
+    line-height: 4.7647059rem;
+    margin-top: 1.5882353rem;
+    margin-bottom: 3.1764706rem;
+  }
+  @include breakpoint("xl") {
+    font-size: 4.2222222rem;
+    line-height: 4.8333333rem;
+    margin-top: 1.6111111rem;
+    margin-bottom: 3.2222222rem;
+  }
+}
+h2 {
+  font-size: 2.625rem;
+  line-height: 3.25rem;
+  margin-top: 1.625rem;
+  margin-bottom: 1.625rem;
+
+  @include breakpoint("l") {
+    font-size: 2.6470588rem;
+    line-height: 3.1764706rem;
+    margin-top: 1.5882353rem;
+    margin-bottom: 1.5882353rem;
+  }
+
+  @include breakpoint("xl") {
+    font-size: 2.6111111rem;
+    line-height: 3.2222222rem;
+    margin-top: 1.6111111rem;
+    margin-bottom: 1.6111111rem;
+  }
+}
+h3 {
+  font-size: 1.625rem;
+  line-height: 1.625rem;
+  margin-top: 1.625rem;
+  margin-bottom: 0rem;
+
+  @include breakpoint("l") {
+    font-size: 1.6470588rem;
+    line-height: 3.1764706rem;
+    margin-top: 1.5882353rem;
+    margin-bottom: 0rem;
+  }
+
+  @include breakpoint("xl") {
+    font-size: 1.6111111rem;
+    line-height: 1.6111111rem;
+    margin-top: 1.6111111rem;
+    margin-bottom: 0rem;
+  }
+}
+h4 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-top: 1.625rem;
+  margin-bottom: 0rem;
+
+  @include breakpoint("l") {
+    font-size: 1rem;
+    line-height: 1.5882353rem;
+    margin-top: 1.5882353rem;
+    margin-bottom: 0rem;
+  }
+
+  @include breakpoint("xl") {
+    font-size: 1rem;
+    line-height: 1.6111111rem;
+    margin-top: 1.6111111rem;
+    margin-bottom: 0rem;
+  }
+}
+h5 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-top: 1.625rem;
+  margin-bottom: 0rem;
+
+  @include breakpoint("l") {
+    font-size: 1rem;
+    line-height: 1.5882353rem;
+    margin-top: 1.5882353rem;
+    margin-bottom: 0rem;
+  }
+
+  @include breakpoint("xl") {
+    font-size: 1rem;
+    line-height: 1.6111111rem;
+    margin-top: 1.6111111rem;
+    margin-bottom: 0rem;
+  }
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+/* Let's make sure all's aligned */
+hr,
+.hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a,
+b,
+i,
+strong,
+em,
+small,
+code {
+  line-height: 0;
+}
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+// Links
+
+/*
+a:link {}
+a:visited {}
+a:focus {}
+a:hover {}
+a:active {}
+*/
