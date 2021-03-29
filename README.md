@@ -1,12 +1,13 @@
 # About
 
-This template is my personal working template I use for my new projects.
+This is a basic HTML/SCSS template is use for my webdesign projects.
 
 It contains the following features:
 
-- a source folder that contains all source files of the project
-- a gulp server for automatisation
-- the possibility to make use of scss
+- a source folder with all necessary files
+- scss functionality
+- gulp automatisation
+- browser sync
 
 # Installation
 
