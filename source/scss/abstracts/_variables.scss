@@ -1,0 +1,53 @@
+// Colors
+// ======
+
+// Color Scheme
+$color-1: #00b5cc;
+$color-2: #1e824c;
+
+// Color-1 Accents
+$color-1a: tint($color-1, 80%);
+$color-1b: tint($color-1, 40%);
+$color-1c: shade($color-1, 20%);
+$color-1d: shade($color-1, 40%);
+
+// Color-1 Accents
+$color-2a: tint($color-2, 80%);
+$color-2b: tint($color-2, 40%);
+$color-2c: shade($color-2, 20%);
+$color-2d: shade($color-2, 40%);
+
+// Shades of Gray
+$white: #ffffff;
+$gray-1: #e0e0e0;
+$gray-2: #bcbcbc;
+$gray-3: #8c8c8c;
+$gray-4: #5c5c5c;
+$gray-5: #3c3c3c;
+$gray-6: #1c1c1c;
+$black: #000000;
+
+// Color-Variables
+
+$glass-color: $white;
+$shadow-color: $gray-6;
+$text-color-normal: $gray-5;
+$text-color-light: $white;
+
+// Other
+$gap: 24px;
+$blur: 10px;
+
+$box-shadow: rgba($shadow-color, 0.5) 0 0 $gap;
+
+// Typography
+
+// line height values taken from gridlovers.net
+// scale factor: 1.618 (golden section)
+$line-height-s: 26px;
+$line-height-l: 27px;
+$line-height-xl: 29px;
+
+$font-size-s: 16px;
+$font-size-l: 17px;
+$font-size-xl: 18px;
