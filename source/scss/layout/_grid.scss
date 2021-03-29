@@ -1,25 +1,45 @@
+/*
+
+How to use the grid
+===================
+
+This responsive grid changes depending on the viewport size.
+All you have to do is to create a class "container" (.container)
+to a div to initialize the grid. For all child elements define the
+rows and columns like this: 
+
+main {
+    grid-row: a / b;
+    grid-column: a / b;
+}
+
+a = starting number
+b = ending number
+
+*/
+
 .container {
-    display: grid;
-    margin: 0 auto;
-    gap: 24px;
+  display: grid;
+  margin: 0 auto;
+  gap: $gap;
 
-    @include breakpoint('s') {
-        max-width: 95%;
-        grid-template-columns: 1fr;
-    }
+  @include breakpoint("s") {
+    max-width: 95%;
+    grid-template-columns: 1fr;
+  }
 
-    @include breakpoint('m') {
-        max-width: 80%;
-        grid-template-columns: repeat(6, 1fr [col-start]);
-    }
+  @include breakpoint("m") {
+    max-width: 90%;
+    grid-template-columns: repeat(6, 1fr [col-start]);
+  }
 
-    @include breakpoint('l') {
-        max-width: 960px;
-        grid-template-columns: repeat(12, 1fr [col-start]);
-    }
+  @include breakpoint("l") {
+    max-width: 960px;
+    grid-template-columns: repeat(12, 1fr [col-start]);
+  }
 
-    @include breakpoint('xl') {
-        max-width: 1200px;
-        grid-template-columns: repeat(12, 1fr [col-start]);
-    }
+  @include breakpoint("xl") {
+    max-width: 1200px;
+    grid-template-columns: repeat(12, 1fr [col-start]);
+  }
 }
