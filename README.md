@@ -1,6 +1,6 @@
 # About
 
-This is a basic HTML/SCSS template is use for my webdesign projects.
+This is a basic HTML/SCSS template I use for my webdesign projects.
 
 It contains the following features:
 
